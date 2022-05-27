@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import FormInput from "../../components/form-input/form-input.component";
 import Button from "../../components/button/button.component";
 import './sign-up-form.styles.scss';
@@ -35,7 +35,6 @@ const SignupForm = () => {
 
         try {
             const {user} = await createAuthUserWithEmailPassword(email, password);
-
             await createUserDocFromAuth(user, {displayName});
 
             resetForm();
