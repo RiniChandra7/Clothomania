@@ -23,8 +23,6 @@ export const CategoryProvider = ({children}) => {
         getCategoryMap();
     }, []);
 
-    console.log(categories);
-
     const value = {categories};
 
     return (
